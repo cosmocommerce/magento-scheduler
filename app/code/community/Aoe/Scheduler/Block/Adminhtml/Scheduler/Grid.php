@@ -99,11 +99,11 @@ class Aoe_Scheduler_Block_Adminhtml_Scheduler_Grid extends Mage_Adminhtml_Block_
 			'frame_callback' => array($viewHelper, 'decorateStatus'),
 			'type' => 'options',
 			'options' => array(
-				Mage_Cron_Model_Schedule::STATUS_PENDING => Mage_Cron_Model_Schedule::STATUS_PENDING,
-				Mage_Cron_Model_Schedule::STATUS_SUCCESS => Mage_Cron_Model_Schedule::STATUS_SUCCESS,
-				Mage_Cron_Model_Schedule::STATUS_ERROR => Mage_Cron_Model_Schedule::STATUS_ERROR,
-				Mage_Cron_Model_Schedule::STATUS_MISSED => Mage_Cron_Model_Schedule::STATUS_MISSED,
-				Mage_Cron_Model_Schedule::STATUS_RUNNING => Mage_Cron_Model_Schedule::STATUS_RUNNING,
+				Mage_Cron_Model_Schedule::STATUS_PENDING => Mage::helper('aoe_scheduler')->__(Mage_Cron_Model_Schedule::STATUS_PENDING),
+				Mage_Cron_Model_Schedule::STATUS_SUCCESS => Mage::helper('aoe_scheduler')->__(Mage_Cron_Model_Schedule::STATUS_SUCCESS),
+				Mage_Cron_Model_Schedule::STATUS_ERROR => Mage::helper('aoe_scheduler')->__(Mage_Cron_Model_Schedule::STATUS_ERROR),
+				Mage_Cron_Model_Schedule::STATUS_MISSED => Mage::helper('aoe_scheduler')->__(Mage_Cron_Model_Schedule::STATUS_MISSED),
+				Mage_Cron_Model_Schedule::STATUS_RUNNING => Mage::helper('aoe_scheduler')->__(Mage_Cron_Model_Schedule::STATUS_RUNNING),
 			)
 		));
 
